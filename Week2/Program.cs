@@ -51,7 +51,7 @@ namespace Week2
 
             //Console.WriteLine("Please enter the name of the next student.");
             //studentsInClass[1] = Console.ReadLine();
-           
+
             ////Ask user for input
             //Console.WriteLine("Please enter the age of the person in the first seat.");
             ////Create a new int array with 21 spots and call it ageOfStudentsInClass
@@ -62,6 +62,29 @@ namespace Week2
             ////Create a new string variable and set it equal to the int at the index of 0 ...
             ////and convert it into a string
             //string firstIndex = ageOfStudentsInClass[0].ToString();
+
+            //string[] restaurantsInMall = { "Subway", "Saki", "Dunkin Donuts", "Red Lobster", "Chick Fil-A" };
+            //Console.WriteLine(restaurantsInMall.Length);
+
+            //char[] numberOfLetters = { 'J', 'o', 'n', 'a', 't', 'h', 'a', 'n' };
+            //Console.WriteLine(numberOfLetters.Length);
+
+            //Declare and initialize sting array using the length property print the second to last element in the array.
+            //string[] secondToLast = { "first", "second", "third",  "last" };
+            //Console.WriteLine(secondToLast [secondToLast.Length-2] );
+
+            //int[] bestYearEver = { 1992, 1999, 2004, 2016, 1992, 2016 };
+            //Console.WriteLine(Array.IndexOf(bestYearEver, 1992));
+            //Console.WriteLine(Array.LastIndexOf(bestYearEver, 1992));
+
+            //Array reverse method
+            int[] palindromeNumbers = { 1, 2, 3, 4, 5, 6, 7 };
+            Console.WriteLine(palindromeNumbers[0]);
+            Array.Reverse(palindromeNumbers);
+            Console.WriteLine(palindromeNumbers[0]);
+
+            Console.WriteLine();
+
         }
     }
 }
