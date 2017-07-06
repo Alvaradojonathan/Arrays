@@ -91,28 +91,99 @@ namespace Week2
             //Array.Sort(powerRangers);
             //Console.WriteLine(powerRangers[0]);
 
-            //Declare and initialize a string array of first names. Choose a name to find and print the IndexOf.
-            string[] firstNames = { "Jonathan", "Ashley", "Carlos", "Daniel", "Ali" };
-            Console.WriteLine(Array.IndexOf(firstNames, "Carlos"));
-            //Create an array of lucky numbers. Each number should repeat at least once.Choose a lucky number, find and print the last index of it.
-            int[] luckyNumber = { 13, 2, 3, 7, 13 };
-            Console.WriteLine(Array.LastIndexOf(luckyNumber,13));
-            //Create an array of alphabet characters. Print the first index of the array.Now reverse the array and print the first index.
-            char[] alphabetChars = { 'a', 'b', 'c', 'd', 'e', 'f' };
-            Console.WriteLine(alphabetChars[0]);
-            Array.Reverse(alphabetChars);
-            Console.WriteLine(alphabetChars[0]);
-            //Create an array of student names in random order. Order the students’ names using the sort method.Print the first and last students’ names.
-            string[] studentNames = { "Jonathan", "Adam", "Daniel", "Aali" };
-            Array.Sort(studentNames);
-            Console.WriteLine(studentNames[0]);
-            Console.WriteLine(studentNames[studentNames.Length - 1]);
-            //Ask 10 people for their favorite numbers and create an array of those numbers.Order the numbers using the sort method.Print the first and last numbers.
-            int[] favNumber = { 3, 8, 12, 4, 9, 7, 12, 29, 8, 1, };
-            Array.Sort(favNumber);
-            Console.WriteLine(favNumber[0]);
-            Console.WriteLine(favNumber[favNumber.Length - 1]);
-            
+            ////Declare and initialize a string array of first names. Choose a name to find and print the IndexOf.
+            //string[] firstNames = { "Jonathan", "Ashley", "Carlos", "Daniel", "Ali" };
+            //Console.WriteLine(Array.IndexOf(firstNames, "Carlos"));
+            ////Create an array of lucky numbers. Each number should repeat at least once.Choose a lucky number, find and print the last index of it.
+            //int[] luckyNumber = { 13, 2, 3, 7, 13 };
+            //Console.WriteLine(Array.LastIndexOf(luckyNumber,13));
+            ////Create an array of alphabet characters. Print the first index of the array.Now reverse the array and print the first index.
+            //char[] alphabetChars = { 'a', 'b', 'c', 'd', 'e', 'f' };
+            //Console.WriteLine(alphabetChars[0]);
+            //Array.Reverse(alphabetChars);
+            //Console.WriteLine(alphabetChars[0]);
+            ////Create an array of student names in random order. Order the students’ names using the sort method.Print the first and last students’ names.
+            //string[] studentNames = { "Jonathan", "Adam", "Daniel", "Aali" };
+            //Array.Sort(studentNames);
+            //Console.WriteLine(studentNames[0]);
+            //Console.WriteLine(studentNames[studentNames.Length - 1]);
+            ////Ask 10 people for their favorite numbers and create an array of those numbers.Order the numbers using the sort method.Print the first and last numbers.
+            //int[] favNumber = { 3, 8, 12, 4, 9, 7, 12, 29, 8, 1, };
+            //Array.Sort(favNumber);
+            //Console.WriteLine(favNumber[0]);
+            //Console.WriteLine(favNumber[favNumber.Length - 1]);
+            //Console.WriteLine("Do you want to play the game? YES/NO");
+            //string playAgain = Console.ReadLine();
+            //while(playAgain.ToLower() == "yes")
+            //{
+            //    Console.WriteLine("It's a rematch!");
+            //    Console.WriteLine("Do you want to play the game? YES/NO");
+            //    playAgain = Console.ReadLine();
+            //}
+            //string playAgain;
+            //do
+            //{
+            //    Console.WriteLine("Welcome to my game!");
+            //    //Game
+            //    Console.WriteLine("Great game!");
+            //    Console.WriteLine("Do you want to play the game? YES/NO");
+            //    playAgain = Console.ReadLine();
+            //}
+            //while (playAgain.ToLower() == "yes");
+
+            //string add;
+            //int classNumber;
+            //Console.WriteLine("How many classes did you take?");
+            //classNumber = int.Parse(Console.ReadLine());
+
+            //string [] className = new string[classNumber];
+            //string [] classGrade = new string[classNumber];
+
+
+            //do
+            //{
+
+            //    Console.WriteLine("Would you like to add a class? YES/NO");
+            //    add = Console.ReadLine();
+            //    if (add.ToLower () == "yes")
+            //    {
+            //        for (int i = 0; i< classNumber; i++)
+            //        {
+            //            Console.WriteLine("What is the name for class " + i + 1 + "?");
+            //            className[i] = Console.ReadLine();
+            //            Console.WriteLine("What is the earned class grade?");
+            //            classGrade[i]= Console.ReadLine();
+            //        }
+            //    }
+            //}
+            //while (add.ToLower() == "yes");
+
+            //for (int rows = 1; rows <= 2; rows++)
+            //{
+            //    for (int columns = 1; columns <= 4; columns++)
+            //    {
+            //        Console.Write(columns);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+            //Print a triangle outer loop will go line by line
+            //inner loop will go over different elements in the line.
+            //Result:
+            //1
+            //1 2
+            //1 2 3
+            //1 2 3 4
+
+            for (int rows = 1; rows <= 25; rows++)
+            {
+                for (int columns = 1; columns <= rows; columns++)
+                {
+                    Console.Write(columns);                    
+                }
+                Console.WriteLine();
+            }
 
 
         }
