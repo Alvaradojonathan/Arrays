@@ -186,33 +186,61 @@ namespace Week2
             //}
             //Remember that in FizzBuzz, if it is not a FizzBuzz, Fizz, or Buzz number
             //you print the number itself.
-            Console.WriteLine("Let's Play FizzBuzz!");
-            Console.WriteLine("Please enter your FIZZ number");
-            int fizz = int.Parse(Console.ReadLine());
-            Console.WriteLine("Please enter your BUZZ number");
-            int buzz = int.Parse(Console.ReadLine());
-            Console.WriteLine("What number would you like me to count to? (Pick a high one)");
-            int endNumber = int.Parse(Console.ReadLine());
-            for (int i = 0; i <= endNumber; i++)
-            {
-                if (i % fizz == 0 && i % buzz == 0)
-                {
-                    Console.WriteLine("Fizz Buzz!");
-                }
-                else if (i % fizz == 0)
-                {
-                    Console.WriteLine("Fizz!");
-                }
-                else if (i % buzz == 0)
-                {
-                    Console.WriteLine("Buzz!");
-                }
-                else
-                {
-                    Console.WriteLine(i);
-                }
-            }
+            //Console.WriteLine("Let's Play FizzBuzz!");
+            //Console.WriteLine("Please enter your FIZZ number");
+            //int fizz = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Please enter your BUZZ number");
+            //int buzz = int.Parse(Console.ReadLine());
+            //Console.WriteLine("What number would you like me to count to? (Pick a high one)");
+            //int endNumber = int.Parse(Console.ReadLine());
+            //for (int i = 0; i <= endNumber; i++)
+            //{
+            //    if (i % fizz == 0 && i % buzz == 0)
+            //    {
+            //        Console.WriteLine("Fizz Buzz!");
+            //    }
+            //    else if (i % fizz == 0)
+            //    {
+            //        Console.WriteLine("Fizz!");
+            //    }
+            //    else if (i % buzz == 0)
+            //    {
+            //        Console.WriteLine("Buzz!");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            //for (int row = 1; row <= 7; row++)
+            //{
+            //    for (int column = 1; column <= 5; column++)
+            //    {
+            //        Console.Write(column * row + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
 
+            //string[] movies = { "V for Vendetta", "Underworld", "District 9", "The Incredible Hulk", "Mr.Nobody", "Wanted", "A.I." };
+            //foreach (string movie in movies)
+            //{
+
+            //    Console.WriteLine(movie);
+            //}
+
+
+            //Console.WriteLine ("Please enter a number")
+            //int number = int.Parse(console.readline());
+            //do
+            //{
+            //Console.WriteLine ("Please enter a number")
+            //int number = int.Parse(console.readline());
+            //if(number % 3 == 0)
+            //{ 
+            //Console.WriteLine("You won!")
+            //}
+            //}
+            //while (number % 3 == 0);
 
         }
     }
