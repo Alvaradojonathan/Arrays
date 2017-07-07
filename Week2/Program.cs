@@ -290,24 +290,24 @@ namespace Week2
             //    }               
             //}
             //Console.WriteLine("This phrase has:\n{0} a's\n{1} e's\n{2} i's\n{3} o's\n{4} u's\n", a, e, i, o, u);
-            Random randomNumber = new Random();
-            int randy;
-            randy = randomNumber.Next(1,11);
-            int user;
+            //Random randomNumber = new Random();
+            //int randy;
+            //randy = randomNumber.Next(1,11);
+            //int user;
 
-            Console.WriteLine("What number between 1 and 10 am I thinking of?");
-            do
-            {
-                user = int.Parse(Console.ReadLine());
-                if (user != randy)
-                {
-                    Console.Write("Nope, try again: ");
-                }
+            //Console.WriteLine("What number between 1 and 10 am I thinking of?");
+            //do
+            //{
+            //    user = int.Parse(Console.ReadLine());
+            //    if (user != randy)
+            //    {
+            //        Console.Write("Nope, try again: ");
+            //    }
 
-            }
-            while (user != randy);
-            Console.WriteLine("Correct, the number was: " + randy);
-            Console.ReadKey();
+            //}
+            //while (user != randy);
+            //Console.WriteLine("Correct, the number was: " + randy);
+            //Console.ReadKey();
         }
     }
 }
