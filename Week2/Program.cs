@@ -224,24 +224,90 @@ namespace Week2
             //string[] movies = { "V for Vendetta", "Underworld", "District 9", "The Incredible Hulk", "Mr.Nobody", "Wanted", "A.I." };
             //foreach (string movie in movies)
             //{
+            //    if (movie.StartsWith("A"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("E"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("I"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("O"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("U"))
+            //    {
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(movie);
+            //    }
 
-            //    Console.WriteLine(movie);
             //}
 
-
-            //Console.WriteLine ("Please enter a number")
-            //int number = int.Parse(console.readline());
+            //int number;
+            //string tryAgain;
             //do
             //{
-            //Console.WriteLine ("Please enter a number")
-            //int number = int.Parse(console.readline());
-            //if(number % 3 == 0)
-            //{ 
-            //Console.WriteLine("You won!")
+            //    Console.Write("Please enter a number: ");
+            //    number = int.Parse(Console.ReadLine());
+            //    if (number % 3 != 0)
+            //    {
+            //        Console.WriteLine("You lost...");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("You won!");
+            //    }
             //}
-            //}
-            //while (number % 3 == 0);
+            //while (number % 3 != 0);
 
+
+
+            //Console.WriteLine("Please enter a phrase:");
+            //string phrase = Console.ReadLine().ToLower();
+            //int a = 0;
+            //int e = 0;
+            //int i = 0;
+            //int o = 0;
+            //int u = 0;
+            //foreach (char vowel in phrase)
+            //{
+            //    switch (vowel)
+            //    {
+            //        case 'a':{a++;break;}
+            //        case 'e':{e++;break;}
+            //        case 'i':{i++;break;}
+            //        case 'o':{o++;break;}
+            //        case 'u':{u++;break;}
+            //        default: { break;}
+            //    }               
+            //}
+            //Console.WriteLine("This phrase has:\n{0} a's\n{1} e's\n{2} i's\n{3} o's\n{4} u's\n", a, e, i, o, u);
+            Random randomNumber = new Random();
+            int randy;
+            randy = randomNumber.Next(1,11);
+            int user;
+
+            Console.WriteLine("What number between 1 and 10 am I thinking of?");
+            do
+            {
+                user = int.Parse(Console.ReadLine());
+                if (user != randy)
+                {
+                    Console.Write("Nope, try again: ");
+                }
+
+            }
+            while (user != randy);
+            Console.WriteLine("Correct, the number was: " + randy);
+            Console.ReadKey();
         }
     }
 }
